@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+/* To-Do List Container */
+.todo-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+/* Header Styling */
+.todo-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3c72;
+    display: flex;
+    align-items: center;
+}
+
+.todo-header i {
+    margin-left: 10px;
+}
+
+/* Input and Button Container */
+.todo-input-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    background: #f0f0f0;
+    font-size: 16px;
+}
+
+.todo-add-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: #ff6b6b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Task List Styling */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+/* Checkbox */
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Label */
+.todo-item label {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Strikethrough effect for completed tasks */
+.todo-item label.completed {
+    text-decoration: line-through;
+    color: #888; /* Change color for better visibility */
+}
+
+/* Edit Input */
+.edit-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Delete Button */
+.todo-item .delete-button {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.todo-item .delete-button:hover {
+    color: #ff3b3b;
+}
+
+/* Menu Button Style */
+.move-button {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 20px; /* Adjust size as needed */
+    margin: 0 5px; /* Add some space between buttons */
+}
+
+/* Menu icon (three lines) */
+.move-button:before {
+    content: '|||'; /* Three vertical lines */
+    font-size: 20px; /* Adjust size as needed */
+}
+
+/* Dragging Effect */
+.todo-item.dragging {
+    opacity: 0.5; /* Make the item semi-transparent while dragging */
+    transition: opacity 0.2s ease; /* Smooth transition */
+}
+
+/* Hover Effect for List Items */
+.todo-item:hover {
+    background: #f9f9f9; /* Slight background change on hover */
+}
