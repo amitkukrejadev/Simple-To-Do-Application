@@ -21,4 +21,4 @@ A simple and intuitive to-do list application built with HTML, CSS, and JavaScri
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/todo-list.git
+   git clone https://github.com/amitkukrejadev/Simple-To-Do-Application
