@@ -19,3 +19,43 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+### Instructions to Set Up Your GitHub Repository
+
+1. **Create a New Repository**:
+   - Go to your GitHub account and create a new repository named `todo-list`.
+
+2. **Initialize the Repository**:
+   - If you haven't already done so, navigate to your project folder in the terminal.
+   - Run the following commands to initialize your local repository:
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     ```
+
+3. **Link the Remote Repository**:
+   - Link your local repository to the GitHub repository you created:
+     ```bash
+     git remote add origin https://github.com/yourusername/todo-list.git
+     ```
+
+4. **Push to GitHub**:
+   - Push your local commits to the GitHub repository:
+     ```bash
+     git push -u origin master
+     ```
+
+5. **Add the README**:
+   - Create a file named `README.md` in your project directory.
+   - Copy and paste the provided README content into the file, then save it.
+   - Add and commit the README:
+     ```bash
+     git add README.md
+     git commit -m "Add README file"
+     git push
+     ```
+
+Now your GitHub repository is set up with your project files and a README! If you need any more help, feel free to ask.
